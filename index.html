@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+<title>Buy Used, Pre Owned Cars</title>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Barrio|Sansita" rel="stylesheet">
+  <style>
+  body{
+    font-family: 'Sansita', sans-serif;
+    margin: 0 auto;
+    max-width: 1100px;
+    background: url("http://www.newdesignfile.com/postpic/2014/03/wood-grain-background-pattern_89271.jpg");
+      }
+    div{
+      height: 500px;
+      background-size: cover;
+      position: relative;
+      margin: 40px 0 0 0;
+      border-radius: 12px;
+      }
+      h1 {
+    font-family: 'Bree Serif', serif;
+     text-align: center;
+     font-size: 100px;
+     color: black;
+     margin: 60px 0 0 0;
+   }
+   h2 {
+     text-align: center;
+     color: #bbbbbb;
+     margin: 0px 0 70px 0;
+   }
+
+    .first{
+      background-image: url("http://www.telegraph.co.uk/content/dam/motoring2/2015/12/03/cayenne-diesel-main-xlarge-large_trans_NvBQzQNjv4BqrWYeUU_H0zBKyvljOo6zlkYMapKPjdhyLnv9ax6_too.jpg");
+      background-size: 100% 100%;
+      }
+
+      .second{
+        background-image: url("http://images.car.bauercdn.com/pagefiles/30935/audirs7_02.jpg");
+        background-size: 100% 100%;
+      }
+      .third{
+        background-image: url("http://i.gasgoo.com/upload/ubb/2014513164747.jpg");
+        background-size: 100% 100%;
+      }
+      p{
+        color: rgba(255,255,255,1);
+              background: black;
+              background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+              background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+              background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+              padding: 10px;
+              line-height: 28px;
+              width: 1080px;
+              border-radius: 12px;
+              text-align: justify;
+              position: relative;
+              bottom: 0;
+              margin: 0;
+              height: 30px;
+              transition: height .5s;
+              -webkit-transition: height .5s;
+              -moz-transition: height .5s;
+
+
+      }
+      small{
+     opacity: 0;
+   }
+   .show-description p{
+     height: 270px;
+   }
+   .show-description small{
+     opacity: 1;
+   }
+   @media (max-width: 500px) {
+         h1 {
+           font-size: 50px;
+           margin-top: 20px;
+           line-height: 40px;
+         }
+         h2{
+           font-size: 20px;
+           margin: 20px 0 30px 0;
+         }
+         div{
+           margin: 20px 12px 0 12px;
+         }
+         p{
+           font-size: 20px;
+           line-height: 24px;
+         }
+         small{
+           font-size: 16px;
+         }
+       }
+
+      .price{
+        float: right;
+      }
+  </style>
+</head>
+
+
+
+<body>
+  <h1> Car Nation </h1>
+  <h2><big> The one stop destination for pre-owned luxury cars.</big></h2>
+  <div class="first show-description">
+
+    <p> Porsche Cayenne <span class="price">$59,600</span><br/><small>Overview:- <br>
+      *All Wheel Drive <br>
+      *8-speed Tiptronic S Transmission<br>
+      *3.0L, V6, VGT, Longitudinal<br>
+      *Peak Power 244PS @3800 rpm <br>
+      *Peak Torque 550Nm @1750 rpm <br>
+      *24000 Kms Done <br>
+      *Porsche Stability Management (PSM) with ABS,ASR,ABD</small></p>
+  </div>
+  <div class="second show-description">
+
+    <p> Audi RS7 <span class="price">$110,700</span><br/> <small>Overview:- <br>
+      *Quattro, All Wheel Drive <br>
+      *8 Speed Automatic Transmission <br>
+      *4.0 L, TFSI, V8, Longitudinal <br>
+      *Peak Power 567PS @5700 rpm <br>
+      *Peak Torque 700Nm @1750 rpm <br>
+      *13500 Kms Done <br>
+      *V8 Engine with Audi Cylinder on Demand- Engine Efficiency Technology
+    </small></p>
+  </div>
+  <div class="third show-description">
+
+      <p>BMW 650i Convertible <span class="price">$85,100</span><br/><small>Overview:- <br>
+        *Rear Wheel Drive <br>
+        *8 Speed Automatic Transmission <br>
+        *4.4L, V8, Longitudinal <br>
+        *402 PS @ 5500 rpm<br>
+        *600 Nm @ 1750 rpm<br>
+        *9000 Kms Done<br>
+        *Black Soft Top</small>
+      </p>
+  </div>
+  <script>
+    $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+      });
+</script>
+</body>
